@@ -1,0 +1,26 @@
+# Pretrained GPT-2 weights (auto-downloaded)
+gpt2/
+
+# Training data (auto-downloaded or user-provided)
+Data/
+
+# Trained model outputs
+models/
+outputs/
+*.pth
+*.pt
+
+# Downloaded archives
+sms_spam_collection.zip
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
