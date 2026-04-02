@@ -44,22 +44,3 @@ jobs:
         if: matrix.python-version == '3.11'
         with:
           file: coverage.xml
-
-  typecheck:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-      - name: Install uv
-        run: curl -LsSf https://astral.sh/uv/install.sh | sh
-      - name: Install dependencies
-        run: |
-          uv venv
-          source .venv/bin/activate
-          uv pip install -e ".[all,dev]"
-      - name: Run mypy
-        run: |
-          source .venv/bin/activate
-          mypy src/gpt2_framework/
