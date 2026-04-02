@@ -1,7 +1,0 @@
-torch
-tiktoken
-pandas
-numpy
-tqdm
-requests
-tensorflow

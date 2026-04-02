@@ -24,3 +24,32 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+
+# Virtual environment
+.venv/
+
+# uv lock
+uv.lock
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Runtime directories (created by training scripts)
+gpt2/
+Data/
+models/
+outputs/
+
+# Nox
+.nox/
+
+# mypy
+.mypy_cache/
+
+# pytest
+.pytest_cache/
+
+# Ruff
+.ruff_cache/
