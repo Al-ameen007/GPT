@@ -8,9 +8,9 @@ class MultiHeadAttention(nn.Module):
     def __init__(self, d_in, d_out, context_len, drop_rate, n_heads, qkv_bias):
         super().__init__()
 
-        assert (
-            d_out % n_heads == 0
-        ), f"d_out ({d_out}) must be divisible by n_heads ({n_heads})"
+        assert d_out % n_heads == 0, (
+            f"d_out ({d_out}) must be divisible by n_heads ({n_heads})"
+        )
 
         self.d_out = d_out
         self.d_in = d_in
