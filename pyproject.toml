@@ -78,13 +78,6 @@ ignore = ["E501"]
 [tool.ruff.lint.isort]
 known-first-party = ["gpt2_framework"]
 
-# ── Mypy ──────────────────────────────────────────────────────────
-[tool.mypy]
-python_version = "3.11"
-warn_return_any = true
-warn_unused_configs = true
-ignore_missing_imports = true       # Needed for torch, tiktoken, etc.
-
 # ── Pytest ────────────────────────────────────────────────────────
 [tool.pytest.ini_options]
 testpaths = ["tests"]
